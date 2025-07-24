@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="./assets/css/quiz.css">
 </head>
 <body class="fullbg">
-    <div class="c1">
-    <h1>THE SUPERHERO QUIZ</h1>
-    </div>
 
     <div class="c2">
         <div class="c1">
@@ -22,25 +19,23 @@
             </p>
 
             <div class="option" id="option1out" onclick="selectoption('1')">
-                <div class="circle1">
+                <div class="circle1"></div>
                     <p class="optionIn" id="option1">This is an option</p>
                 </div>
             <div class="option" id="option2out" onclick="selectoption('2')">
-                <div class="circle1">
+                <div class="circle1"></div>
                     <p class="optionIn" id="option2">This is an option</p>
                 </div>
             <div class="option" id="option3out" onclick="selectoption('3')">
-                <div class="circle1">
+                <div class="circle1"></div>
                     <p class="optionIn" id="option3">This is an option</p>
                 </div>
             <div class="option" id="option4out" onclick="selectoption('4')">
-                <div class="circle1">
+                <div class="circle1"></div>
                     <p class="optionIn" id="option4">This is an option</p>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
 <div class="c3">
     <button class="btn" onclick="previousquestion()">Previous</button>
@@ -53,4 +48,10 @@
     <p id="score">0/0</p>
 </div>
 </body>
+
+<script>
+        //concole.log(localStorage.getItem('quizType'));
+        //console.log(localStorage.getItem('questionNumber'));
+        //console.log(localStorage.getItem('score'));
+</script>
 </html>
