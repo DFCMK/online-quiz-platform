@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fullbg{
+    background-image: url("../images/background-1497873_1280.jpg");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.c1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.c1 h1{
+    font-size: 70px;
+    color: yellow;
+    font-weight: 600;
+    font-family: "Rubik Gemstones", system-ui;
+}
+
+.c2{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.c2 .question{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 15px 25px;
+    margin: 10px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.c2 .option{
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.c2 .optionIn{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+}
+
+.c2 .option .circle1 {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.c2 .rightanswer{
+    background-color: #99B83C;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 15px 25px;
+}
+
+.c2 .rightanswer .circle1{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-image: url("../images/ok-1976099_640.png");
+    background-size: cover;
+}
+
+.c2 .wronganswer{
+    background-color: #B83C3C;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 15px 25px;
+}
+
+.c2 .wronganswer .circle1{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-image: url("../images/abort-156539_640.png");
+    background-size: cover;
+}
+
+.c3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.c3 button{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+}
+
+.c3 button:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.scoreboard{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    background-color: black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.scoretext{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#score{
+    font-size: 20px;
+    background-color: yellow;
+    color: black;
+}
+
+
+.c2 .option:hover{
+    box-shadow: 0px 0px 10px 2px rgb(255, 240, 29);
+}
