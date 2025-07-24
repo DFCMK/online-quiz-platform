@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="./assets/css/quiz.css">
+</head>
+<body class="fullbg">
+    <div class="c1">
+    <h1>THE SUPERHERO QUIZ</h1>
+    </div>
+
+    <div class="c2">
+        <div class="c1">
+            <h1>THE SUPERHERO QUIZ</h1>
+        </div>
+
+        <div class="c2">
+            <p class="question" id="question">
+                Q1. Which of these is not a Marvel character?
+            </p>
+
+            <div class="option" id="option1out" onclick="selectoption('1')">
+                <div class="circle1">
+                    <p class="optionIn" id="option1">This is an option</p>
+                </div>
+            <div class="option" id="option2out" onclick="selectoption('2')">
+                <div class="circle1">
+                    <p class="optionIn" id="option2">This is an option</p>
+                </div>
+            <div class="option" id="option3out" onclick="selectoption('3')">
+                <div class="circle1">
+                    <p class="optionIn" id="option3">This is an option</p>
+                </div>
+            <div class="option" id="option4out" onclick="selectoption('4')">
+                <div class="circle1">
+                    <p class="optionIn" id="option4">This is an option</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="c3">
+    <button class="btn" onclick="previousquestion()">Previous</button>
+    <button class="btn" onclick="quitquiz()">Quit</button>
+    <button class="btn" onclick="nextquestion()">Next</button>
+</div>
+
+<div class="scoreboard">
+    <p class="scoretext">Score:</p>
+    <p id="score">0/0</p>
+</div>
+</body>
+</html>
