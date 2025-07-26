@@ -114,3 +114,25 @@
     cursor: pointer;
     box-shadow: 0px 0px 10px 2px rgb(255, 240, 29);
 }
+
+.c2 .card2{
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c2 .card2 img{
+    width: 95%;
+    object-fit: cover;
+}
+
+.c2 .card2:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px rgb(255, 240, 29);
+}
