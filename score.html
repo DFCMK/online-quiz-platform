@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Score</title>
+    <title>SUPERHERO QUIZ</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    
+<body class="fullbg">
+    <div class="c1">
+    <h1>THE SUPERHERO QUIZ</h1>
+    <div class="hrline1"></div>
+    <p class="score">Your Score is 0/0</p>
+    <button onclick="quitquiz()">Quit</button>
+</div>
+
+<script>
+    const quitquiz = ()=>{
+        localStorage.clear();
+        window.location.href="index.html";
+    }
+
+    document.querySelector("p").innerHZML = "You Score is "+ localStorage.getItem("finalscore");
+</script>
 </body>
 </html>
