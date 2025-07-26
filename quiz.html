@@ -80,7 +80,7 @@
             },
         ]
 
-        const dcquestions = [
+        const dcquestion = [
                        {
                 question: 'Who is Batman?',
                 options: ["Bruce Wayne", "Clark Kent", "Barry Allen", "Diana Prince"],
@@ -213,7 +213,7 @@
                     }
                 }
                 else if(quizType == 'dc'){
-                    if(optionValue == dcquestion[questionNumber - 1].options[dcquestions[questionNumber - 1].answer]){
+                    if(optionValue == dcquestion[questionNumber - 1].options[dcquestion[questionNumber - 1].answer]){
                         document.getElementById("option" + optionnumber + "out").classList.add("rightanswer");
                         score++
                         localStorage.setItem("score", score);
@@ -249,13 +249,13 @@
             }else if (quizType == 'dc'){
                 status()
 
-                questionElement.innerHTML = dcquestions[questionNumber - 1].question;
-                option1Element.innerHTML = dcquestions[questionNumber - 1].options[0];
-                option2Element.innerHTML = dcquestions[questionNumber - 1].options[1];
-                option3Element.innerHTML = dcquestions[questionNumber - 1].options[2];
-                option4Element.innerHTML = dcquestions[questionNumber - 1].options[3];
+                questionElement.innerHTML = dcquestion[questionNumber - 1].question;
+                option1Element.innerHTML = dcquestion[questionNumber - 1].options[0];
+                option2Element.innerHTML = dcquestion[questionNumber - 1].options[1];
+                option3Element.innerHTML = dcquestion[questionNumber - 1].options[2];
+                option4Element.innerHTML = dcquestion[questionNumber - 1].options[3];
 
-            if(localStorage.getItem(`answer ${questionNuber}`) != null){
+            if(localStorage.getItem(`answer ${questionNumber}`) != null){
                 selectedoption(localStorage.getItem(`answer ${questionNumber}`))
             }
             }else{
@@ -269,7 +269,7 @@
                 length = marvelquestion.length;
             }
             else if (quizType == "dc"){
-                length = dcquestions.length;
+                length = dcquestion.length;
             }
 
             document.getElementById('score').innerHTML = `${score}/${length}`;
