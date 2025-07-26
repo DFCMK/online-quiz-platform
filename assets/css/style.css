@@ -43,6 +43,42 @@
     font-family: 'Franklin Gothic Medium', 'Areial Narrow', Arial, sans-serif;
 }
 
+.c1 .label {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.c1 .score {
+    background-color: white;
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.c1 button{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+}
+
+.c1 button:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
 .c1 .hrline1{
     width: 300px;
     height: 2px;
